@@ -28,7 +28,7 @@ async def photo_handler(client, message):
         InlineKeyboardButton(text="𝖢𝗅𝗈𝗌𝖾", callback_data="close_data"),
     ]]
     try:
-        await message.reply(text="Select Your Required Mode From Below", quote=True, reply_markup=InlineKeyboardMarkup(buttons))            
+        await message.reply(text="Select Your Required Mode From Below", quote=False, reply_markup=InlineKeyboardMarkup(buttons))            
     except Exception as e:
         print(e)
         if "USER_IS_BLOCKED" in str(e): return           
