@@ -53,7 +53,7 @@ BUTTON_LOCK = is_enabled(environ.get("BUTTON_LOCK", "True"), True)
 RemoveBG_API = environ.get("RemoveBG_API", "")
 
 # url shortner
-SHORT_URL = environ.get("https://tulinks.online/")
+SHORT_URL = environ.get("tulinks.online")
 SHORT_API = environ.get("757df607ee64875bd63c4ab0be3f6990740ecafe")
 
 # Others
