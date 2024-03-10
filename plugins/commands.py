@@ -42,9 +42,9 @@ async def start(client, message):
             InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
         ],[
               
-            InlineKeyboardButton("✨ Buy Subsccription ✨", callback_data="Buy Subscription")     
+            InlineKeyboardButton("✨ Buy Subsccription ✨", callback_data="Buy Subscription")
         ]]
-        m = await message.reply_sticker("CAACAgUAAxkBAAEBvlVk7YKnYxIHVnKW2PUwoibIR2ygGAACBAADwSQxMYnlHW4Ls8gQHgQ") 
+        m = await message.reply_text("YOUR TEXT HERE""𝖲𝖳𝖠𝖱𝖳𝖨𝖭𝖦 👀")
         await asyncio.sleep(2)
         await message.reply_photo(photo=random.choice(PICS), caption=START_MESSAGE.format(user=message.from_user.mention, bot=client.mention), reply_markup=InlineKeyboardMarkup(buttons), parse_mode=enums.ParseMode.HTML)
         return await m.delete()
