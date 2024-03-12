@@ -11,7 +11,7 @@ def is_enabled(value, default):
 
 
 # PyroClient Setup
-SESSION = environ.get('SESSION', 'Media_search')
+SESSION = environ.get('SESSION', '@JM_FILES')
 API_ID = int(environ.get('API_ID', '22318866'))
 API_HASH = environ.get('API_HASH', '7fcac00bc99a1fb23b7563115fd079a6')
 BOT_TOKEN = environ.get('BOT_TOKEN', '7065664880:AAEFBywwgE6s-KrnVVtqy9x1H7BkrwO4bic')
@@ -37,7 +37,7 @@ DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://TKORIGINALS:TKORIGINAL
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 FILE_DB_URL = environ.get("FILE_DB_URL", DATABASE_URL)
 FILE_DB_NAME = environ.get("FILE_DB_NAME", DATABASE_NAME)
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', '@JM_FILES')
 
 # Filters Configuration 
 MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "10"))
@@ -53,8 +53,8 @@ BUTTON_LOCK = is_enabled(environ.get("BUTTON_LOCK", "True"), True)
 RemoveBG_API = environ.get("RemoveBG_API", "")
 
 # url shortner
-SHORT_URL = environ.get("https://gyanilinks.com/")
-SHORT_API = ("1fa3b4cd965dc758f0086b99d18aa0df31ac2571")
+SHORT_URL = environ.get("tulinks.online")
+SHORT_API = ("757df607ee64875bd63c4ab0be3f6990740ecafe")
 
 # Others
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
